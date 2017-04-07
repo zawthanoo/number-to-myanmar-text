@@ -13,6 +13,7 @@ public class MymNumConstant {
 	public static final String MYN_ZERO_5_COUNT = "MYN_ZERO_5_COUNT";
 	public static final String MYN_ZERO_6_COUNT = "MYN_ZERO_6_COUNT";
 	public static final String LAH_PREFIX = "LAH_PREFIX";
+	public static final String MYN_PAUNG = "MYN_PAUNG";
 	public static final String LAH_POSTFIX = "LAH_POSTFIX";
 	
 }

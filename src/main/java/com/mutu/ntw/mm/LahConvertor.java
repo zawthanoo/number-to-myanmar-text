@@ -13,11 +13,26 @@ public class LahConvertor extends AbstractMynNumConvertor {
         			buffer.append(mymNumberConfig.getProperty(MymNumConstant.MYN_ZERO_1_COUNT));
         			buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_POSTFIX));
         		} else {
-        			buffer.append(defaultConvertor.getName(lahNumber));
-        			buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_POSTFIX));
+            		if((lahNumber + "").length() > 2) {
+            			buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_PREFIX));
+            			buffer.append(mymNumberConfig.getProperty(MymNumConstant.MYN_PAUNG) + " ");
+            		} else {
+            			buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_PREFIX) + " ");
+            		}
+        		}
+        		buffer.append(defaultConvertor.getName(lahNumber));
+        		buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_PREFIX));
+        		int notlahNumber = Integer.valueOf(value.substring(value.length() - 5, value.length()));
+        		if( notlahNumber > 0){
+        			buffer.append(" " + mymNumberConfig.getProperty(MymNumConstant.MYN_UNION_AND) + " ");
         		}
         	} else {
-        		buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_PREFIX) + " ");
+        		if((lahNumber + "").length() > 2) {
+        			buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_PREFIX));
+        			buffer.append(mymNumberConfig.getProperty(MymNumConstant.MYN_PAUNG) + " ");
+        		} else {
+        			buffer.append(mymNumberConfig.getProperty(MymNumConstant.LAH_PREFIX));
+        		}
         		buffer.append(defaultConvertor.getName(lahNumber));
         		int notlahNumber = Integer.valueOf(value.substring(value.length() - 5, value.length()));
         		if( notlahNumber > 0){

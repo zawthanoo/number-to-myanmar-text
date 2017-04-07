@@ -17,7 +17,8 @@ public class TestCase {
 	}
 
 	public static void main(String[] args) {
-		Double value = 12345678d;
+		String st = "9,000,101".replaceAll("[^\\d.]+", "");
+		Double value = Double.valueOf(st);
 		AbstractMynNumConvertor convertor = new DefaultConvertor();
 		String mmWord = convertor.getName(value);
 		
