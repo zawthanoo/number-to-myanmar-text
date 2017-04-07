@@ -40,7 +40,7 @@ Utility library developed in Java to convert digit number to *Myanmar* number in
 	}
 
 Use *TestCase* class to run the utility.
-For example, if the input value is **12345678d**, then the output will be **တစ်ရာနှစ်ဆယ့်သုံးသိန်းလေးသောင်းငါးထောင်ခြောက်ရာခုနှစ်ဆယ့်ရှစ်**
+For example, if the input value is **12345678d**, then the output will be **တစ်ရာနှစ်ဆယ့်သုံးသိန်းလေးသောင်းငါးထောင်ခြောက်ရာခုနှစ်ဆယ့်ရှစ်** (unicode)
 
 ### Note
 
