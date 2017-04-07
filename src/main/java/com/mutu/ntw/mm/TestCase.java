@@ -17,12 +17,12 @@ public class TestCase {
 	}
 
 	public static void main(String[] args) {
-		Double value = 912500990d;
+		Double value = 12345678d;
 		AbstractMynNumConvertor convertor = new DefaultConvertor();
 		String mmWord = convertor.getName(value);
 		
 		/*
-		 To check the output(zawgyi-font) 
+		 To check the output 
 		 Go -> https://www.percederberg.net/tools/text_converter.html
 		 Convert the out ascii code of mmWord.
 		 */
