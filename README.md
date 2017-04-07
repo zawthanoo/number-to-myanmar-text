@@ -30,7 +30,7 @@ Utility library developed in Java to convert digit number to *Myanmar* number in
 			String mmWord = convertor.getName(value);
 			
 			/*
-			 To check the output(zawgyi-font) 
+			 To check the output
 			 Go -> https://www.percederberg.net/tools/text_converter.html
 			 Convert the out ascii code of mmWord.
 			 */
