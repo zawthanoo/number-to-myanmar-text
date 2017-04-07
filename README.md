@@ -45,3 +45,5 @@ For example, if the input value is **12345678d**, then the output will be **·Äê·
 ### Note
 
 Now, it is using **unicode**, if you would like to use **zawgyi**, change `mym-number-unicode.properties` to `mym-number-zawgyi.properties` in `AbstractMynNumConvertor` class.
+
+*999,999,999,999* is current maximun number for conversion. If you want to more, you have to add **7-zero digit** convertor. 
