@@ -17,7 +17,7 @@ public class TestCase {
 	}
 
 	public static void main(String[] args) {
-		Double value = 99900990d;
+		Double value = 912500990d;
 		AbstractMynNumConvertor convertor = new DefaultConvertor();
 		String mmWord = convertor.getName(value);
 		

@@ -13,7 +13,7 @@ public abstract class AbstractMynNumConvertor {
 	    try {
 	    	mymNumberConfig = new Properties();
 		    ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-		    InputStream in = classLoader.getResourceAsStream("mym-number.properties");
+		    InputStream in = classLoader.getResourceAsStream("mym-number-unicode.properties");
 		    mymNumberConfig.load(in);
 			in.close();
 		} catch (IOException e) {
